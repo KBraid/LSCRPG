@@ -1,0 +1,79 @@
+<div class="actor-sheet {{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+    </header>
+    <section>
+        <table>
+            <tr>
+                <th for="name">Race</th>
+                <th>
+                    <select config.actorTypes="actorTypes">
+                        <option data-id="raceTerran">Terran</option>
+                        <option data-id="raceTerranPsionic">Psionic Terran</option>
+                        <option data-id="raceCreature">Creature</option>
+                        <option data-id="raceTerranInfested">Infested Terran</option>
+                        <option data-id="raceZerg">Zerg</option>
+                        <option data-id="raceProtossAiur">Protoss - Aiur</option>
+                        <option data-id="raceProtossNerazim">Protoss - Nerazim</option>
+                        <option data-id="raceZergPrimal">Primal Zerg</option>
+                        <option data-id="raceProtossTalDarim">Protoss - Tal'Darim</option>
+                        <option data-id="raceProtossPurifier">Protoss - Purifier</option>
+                        <option data-id="raceZergBroodmother">Broodmother</option>
+                        <option data-id="racePsionicEntity">Psionic Entity</option>
+                        <option data-id="raceHybrid">Hybrid</option>
+                    </select>
+                </th>
+                <th for="name">Tier</th>
+                <th>
+                    <select config.heroicTier="heroicTier">
+                        <option data-id="tierNonHeroic">Non-Heroic</option>
+                        <option data-id="tierHeroic">Heroic</option>
+                        <option data-id="tierAdvancedHeroic">Advanced Heroic</option>
+                        <option data-id="tierEpicHeroic">Epic Heroic</option>
+                    </select>
+                </th>
+                <th for="name">Level</th>
+                <th class="level"><input name="system.attribute.value.level" type="number" value="{{system.attribute.value.level}}" placeholder="{{ 0 }}"/></th>
+                <th for="name">Experience</th>
+                <th class="experience"><input name="system.attribute.value.experience" type="number" value="{{system.attribute.value.experience}}" placeholder="{{ 0 }}"/></th>
+                <th for="name">/</th>
+                <th class="experienceNext"><input name="system.attribute.value.experienceNext" type="number" value="{{system.attribute.value.experienceNext}}" placeholder="{{ 0 }}"/></th>
+            </tr>
+        </table>
+    </section>
+    <section class="ability">
+        <h3 class="border">Ability Scores</h3>
+        <table>
+            <tr>
+                <th>
+                    <button>overview</button>
+                    </th>
+                <th for="name">STRENGTH</th>
+                <th for="name">INSTINCT</th>
+                <th for="name">AGILITY</th>
+                <th for="name">FORTITUDE</th>
+                <th for="name">INTELLIGENCE</th>
+                <th for="name">WILLPOWER</th>
+            </tr>
+            <tr>
+                <th for="name">Total Score</th>
+                <th class="abilitystr"><input name="system.attribute.value.strength" type="number" value="{{system.attribute.value.strength}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityinst"><input name="system.attribute.value.instinct" type="number" value="{{system.attribute.value.instinct}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityagi"><input name="system.attribute.value.agility" type="number" value="{{system.attribute.value.agility}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityfort"><input name="system.attribute.value.fortitude" type="number" value="{{system.attribute.value.fortitude}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityint"><input name="system.attribute.value.intelligence" type="number" value="{{system.attribute.value.intelligence}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilitywill"><input name="system.attribute.value.willpower" type="number" value="{{system.attribute.value.willpower}}" placeholder="{{ 0 }}"/></th>
+            </tr>
+            <tr>
+                <th for="name">Manual</th>
+                <th class="abilitystr"><input name="system.attribute.value.strength" type="number" value="{{system.attribute.value.strength}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityinst"><input name="system.attribute.value.instinct" type="number" value="{{system.attribute.value.instinct}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityagi"><input name="system.attribute.value.agility" type="number" value="{{system.attribute.value.agility}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityfort"><input name="system.attribute.value.fortitude" type="number" value="{{system.attribute.value.fortitude}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilityint"><input name="system.attribute.value.intelligence" type="number" value="{{system.attribute.value.intelligence}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilitywill"><input name="system.attribute.value.willpower" type="number" value="{{system.attribute.value.willpower}}" placeholder="{{ 0 }}"/></th>
+            </tr>
+        </table>
+    </section>
+</div>

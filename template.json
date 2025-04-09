@@ -1,0 +1,16 @@
+{
+    "Actor":{
+        "types":["actor"]
+    },
+    "Item":{
+        "types":[
+            "item"
+        ],
+        "templates":{
+            "itemDescription":{
+                "description":""
+            }
+        },
+        "weapon":{}
+    }
+}
