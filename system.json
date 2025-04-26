@@ -13,11 +13,20 @@
     "verified": 13
   },
   "esmodules": [
-    "LSCRPG.js"
+    "scripts/LSCRPG.js"
   ],
   "styles": [
-    "LSCRPG.css"
+    "styles/LSCRPG.css"
   ],
-  "languages": [],
-  "packs": []
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "types": {
+    "Actor": ["character", "npc", "creature"],
+    "Item": ["skill", "weapon", "armor", "power"]
+  }
 }

@@ -1,12 +1,12 @@
 /** @name CONFIG.MB */
-export default class config { }
+export default class Config { }
 
-config.systemPath = "systems/LSCRPG/";
-config.coreRollTable = "LSCRPG.LeovauntStarcraftSystem-core-rolltables";
-config.coreItems = "LSCRPG.LeovauntStarcraftSystem-core-items";
-config.coreActors = "LSCRPG.LeovauntStarcraftSystem-core-actors";
+Config.systemPath = "systems/LSCRPG/";
+Config.coreRollTable = "LSCRPG.LeovauntStarcraftSystem-core-rolltables";
+Config.coreItems = "LSCRPG.LeovauntStarcraftSystem-core-items";
+Config.coreActors = "LSCRPG.LeovauntStarcraftSystem-core-actors";
 
-config.actorTypes = {
+Config.actorTypes = {
   raceTerran: "raceTerran",
   raceTerranPsionic: "raceTerranPsionic",
   raceCreature: "raceCreature",
@@ -23,14 +23,14 @@ config.actorTypes = {
   raceHybrid: "raceHybrid"
 };
 
-config.heroicTier = {
+Config.heroicTier = {
   "tierNonHeroic": "tierNonHeroic",
   "tierHeroic": "tierHeroic",
   "tierAdvancedHeroic": "tierAdvancedHeroic",
   "tierEpicHeroic": "tierEpicHeroic"
 };
 
-config.levelTier = {
+Config.levelTier = {
   "tier0": "tier0",
   "tier1": "tier1",
   "tier2": "tier2",

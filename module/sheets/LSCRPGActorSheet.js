@@ -1,10 +1,3 @@
-import config from "../config.js";
-
-/**
- * @extends {ActorSheet}
- */
-
-
 const { api, sheets } = foundry.applications;
 export default class LSCRPGActorSheet extends api.HandlebarsApplicationMixin(sheets.ActorSheetV2) {
     static PARTS = {
