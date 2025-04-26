@@ -5,14 +5,14 @@ import config from "../config.js";
  */
 
 
-const { api, sheets  } = foundry.applications;
+const { api, sheets } = foundry.applications;
 export default class LSCRPGActorSheet extends api.HandlebarsApplicationMixin(sheets.ActorSheetV2) {
-static PARTS = {
-     form: {
-         template: "systems/LSCRPG/templates/sheets/actor-sheet.hbs",
-         width: 800,
-         height: 1000,
-         tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
-        } 
+    static PARTS = {
+        form: {
+            template: "systems/LSCRPG/templates/sheets/actor-sheet.hbs",
+            width: 800,
+            height: 1000,
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
+        }
     }
 };

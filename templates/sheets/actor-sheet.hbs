@@ -1,7 +1,9 @@
 <div class="actor-sheet {{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
-        <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
+        <h1 class="charname">
+            <input name="name" type="text" value="{{actor.name}}" placeholder="{{ localize 'Name' }}" />
+        </h1>
     </header>
     <section>
         <table>
@@ -34,11 +36,20 @@
                     </select>
                 </th>
                 <th for="name">Level</th>
-                <th class="level"><input name="system.attribute.value.level" type="number" value="{{system.attribute.value.level}}" placeholder="{{ 0 }}"/></th>
+                <th class="level">
+                    <input name="system.attribute.value.level" type="number" value="{{system.attribute.value.level}}"
+                        placeholder="{{ 0 }}" />
+                </th>
                 <th for="name">Experience</th>
-                <th class="experience"><input name="system.attribute.value.experience" type="number" value="{{system.attribute.value.experience}}" placeholder="{{ 0 }}"/></th>
+                <th class="experience">
+                    <input name="system.attribute.value.experience" type="number"
+                        value="{{system.attribute.value.experience}}" placeholder="{{ 0 }}" />
+                </th>
                 <th for="name">/</th>
-                <th class="experienceNext"><input name="system.attribute.value.experienceNext" type="number" value="{{system.attribute.value.experienceNext}}" placeholder="{{ 0 }}"/></th>
+                <th class="experienceNext">
+                    <input name="system.attribute.value.experienceNext" type="number"
+                        value="{{system.attribute.value.experienceNext}}" placeholder="{{ 0 }}" />
+                </th>
             </tr>
         </table>
     </section>
@@ -48,7 +59,7 @@
             <tr>
                 <th>
                     <button>overview</button>
-                    </th>
+                </th>
                 <th for="name">STRENGTH</th>
                 <th for="name">INSTINCT</th>
                 <th for="name">AGILITY</th>
@@ -58,21 +69,57 @@
             </tr>
             <tr>
                 <th for="name">Total Score</th>
-                <th class="abilitystr"><input name="system.attribute.value.strength" type="number" value="{{system.attribute.value.strength}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityinst"><input name="system.attribute.value.instinct" type="number" value="{{system.attribute.value.instinct}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityagi"><input name="system.attribute.value.agility" type="number" value="{{system.attribute.value.agility}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityfort"><input name="system.attribute.value.fortitude" type="number" value="{{system.attribute.value.fortitude}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityint"><input name="system.attribute.value.intelligence" type="number" value="{{system.attribute.value.intelligence}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilitywill"><input name="system.attribute.value.willpower" type="number" value="{{system.attribute.value.willpower}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilitystr">
+                    <input name="system.attribute.value.strength" type="number"
+                        value="{{system.attribute.value.strength}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityinst">
+                    <input name="system.attribute.value.instinct" type="number"
+                        value="{{system.attribute.value.instinct}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityagi">
+                    <input name="system.attribute.value.agility" type="number"
+                        value="{{system.attribute.value.agility}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityfort">
+                    <input name="system.attribute.value.fortitude" type="number"
+                        value="{{system.attribute.value.fortitude}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityint">
+                    <input name="system.attribute.value.intelligence" type="number"
+                        value="{{system.attribute.value.intelligence}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilitywill">
+                    <input name="system.attribute.value.willpower" type="number"
+                        value="{{system.attribute.value.willpower}}" placeholder="{{ 0 }}" />
+                </th>
             </tr>
             <tr>
                 <th for="name">Manual</th>
-                <th class="abilitystr"><input name="system.attribute.value.strength" type="number" value="{{system.attribute.value.strength}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityinst"><input name="system.attribute.value.instinct" type="number" value="{{system.attribute.value.instinct}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityagi"><input name="system.attribute.value.agility" type="number" value="{{system.attribute.value.agility}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityfort"><input name="system.attribute.value.fortitude" type="number" value="{{system.attribute.value.fortitude}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilityint"><input name="system.attribute.value.intelligence" type="number" value="{{system.attribute.value.intelligence}}" placeholder="{{ 0 }}"/></th>
-                <th class="abilitywill"><input name="system.attribute.value.willpower" type="number" value="{{system.attribute.value.willpower}}" placeholder="{{ 0 }}"/></th>
+                <th class="abilitystr">
+                    <input name="system.attribute.value.strength" type="number"
+                        value="{{system.attribute.value.strength}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityinst">
+                    <input name="system.attribute.value.instinct" type="number"
+                        value="{{system.attribute.value.instinct}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityagi">
+                    <input name="system.attribute.value.agility" type="number"
+                        value="{{system.attribute.value.agility}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityfort">
+                    <input name="system.attribute.value.fortitude" type="number"
+                        value="{{system.attribute.value.fortitude}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilityint">
+                    <input name="system.attribute.value.intelligence" type="number"
+                        value="{{system.attribute.value.intelligence}}" placeholder="{{ 0 }}" />
+                </th>
+                <th class="abilitywill">
+                    <input name="system.attribute.value.willpower" type="number"
+                        value="{{system.attribute.value.willpower}}" placeholder="{{ 0 }}" />
+                </th>
             </tr>
         </table>
     </section>
